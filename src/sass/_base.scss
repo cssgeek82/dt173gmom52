@@ -1,0 +1,26 @@
+// Resets
+*, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Colors
+$colorone: #152d3d; 
+$colortwo: #244458; 
+$colorthree: #d1d4d6; 
+$black: #000;
+$white: #fff; 
+$redone: #832727;  
+$redtwo: #580b0b;
+
+// Fonts
+$headingfont: 'Times New Roman', Times, serif;
+$bodytext: Arial, sans-serif; 
+
+h2 {
+    font: 100% headingfont;
+    font-size: 28px; 
+    margin-bottom: 20px; 
+    color: $colorone; 
+}

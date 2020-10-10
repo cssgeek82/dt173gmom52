@@ -1,0 +1,76 @@
+.container {
+    background-color: $colorthree;
+}
+.content {
+    max-width: 1000px;
+    margin: auto; 
+    font: 100% $bodytext; 
+}
+.label { 
+    color: $black; 
+    padding-top: 10px; 
+    font-weight: bold; 
+    width: 110px; 
+    display: inline-flex; 
+}
+.forminput {
+    background-color: $colorthree; 
+}
+
+#reads, #writes {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    background-color: $white;
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+table {
+    tr {
+        margin: 20px; 
+        text-align: left; 
+    }
+    th {
+        padding: 10px; 
+        font: 100% $headingfont; 
+        font-size: 20px; 
+        font-weight: bold; 
+        border-bottom: 2px solid $black; 
+    }
+    td {
+        padding: 10px;
+        font: 100% $bodytext; 
+        font-size: 14px; 
+        border-bottom: 1px solid $black; 
+        a {
+            color: $colorone; 
+            text-decoration: none;
+        }
+        a:hover {
+            color: $black; 
+        }
+    }    
+}
+
+.btn {
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: $colorone; 
+    color: $white;
+    border: 1px solid $colortwo; 
+    border-radius: 10px;  
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: $colortwo; 
+    border: 1 px solid $colorone; 
+}
+.redbtn {
+    background-color: $redone;
+    border: 1px solid $redtwo; 
+}
+.redbtn:hover {
+    background-color: $redtwo;
+    border: 1px solid $redone; 
+}

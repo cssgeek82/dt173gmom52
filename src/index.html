@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling III -Moment5:2</title>
+    <link rel="stylesheet" href="css/sass/main.css">
+</head>
+<body onload="getCourses()">   <!-- Starts function to show courses -->
+    <div class="container">
+
+        <header class="header">
+            <h1>Mina kurser</h1>
+        </header>
+
+        <div class="content">
+
+            <div id="reads">  <!-- DIV FOR READING COURSES (and DELETE) -->
+                <h2>Påbörjade och avslutade kurser:</h2> 
+                
+                <table id="showcourses"> <!-- Reads courses from main.js-->
+                </table> 
+            </div>
+
+            <div id="writes"> <!-- DIV WITH FORM FOR ADDING COURSES -->
+                <h2>Lägg till kurs till ovanstående lista</h2>
+
+                <form>
+                    <label class="label" for="code">Kurskod: </label> <input type="text" name="code" id="code" class="forminput" /> <br />
+                    <label class="label" for="name">Kursnamn: </label> <input type="text" name="name" id="name" class="forminput" /><br />
+                    <label class="label" for="progression">Progression: </label>
+                    <select id="progression" name="progression" class="forminput">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                      </select><br />
+                    <label class="label" for="coursesyll">Kursplan: </label> <input type="text" name="coursesyll" id="coursesyll" class="forminput"/><br />
+                    <input type="button" id="writeCourse" name="writeCourse"  value="Addera kurs" class="btn">
+                </form>
+            </div>
+            
+        </div> <!-- End div content-->
+
+        <footer class="footer">
+            <p>Skapad av: Lena Tibbling</p>
+            <p>Mittuniversitetet</p>
+            <p>DT173G: Moment 5:2</p>
+        </footer>
+    
+    </div> <!-- End div container-->
+    <script src="js/main.js"></script>
+</body>
+</html>
